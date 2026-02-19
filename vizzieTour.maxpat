@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1605.0, 136.0, 683.0, 692.0 ],
+		"rect" : [ 181.0, 172.0, 683.0, 692.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -4733,7 +4733,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1605.0, 146.0, 1303.0, 848.0 ],
+						"rect" : [ 175.0, 100.0, 1303.0, 848.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"visible" : 1,
 						"boxes" : [ 							{
@@ -12680,12 +12680,36 @@
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
+									"annotation" : "## An LFO-based VIZZIE data generator ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.oscil8r.maxpat",
+									"numinlets" : 4,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 535.0, 171.0, 200.0, 146.0 ],
+									"prototypename" : "pixl",
+									"varname" : "oscil8r",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-15",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 36.0, 56.0, 165.0, 60.0 ],
+									"patching_rect" : [ 36.0, 56.0, 168.0, 60.0 ],
 									"text" : "3. you can send it automatically with a [metro] (metronome) object. This one sends a pulse ever 200 ms"
 								}
 
@@ -12711,30 +12735,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 36.0, 187.0, 165.0, 33.0 ],
 									"text" : "1. drag an image onto the canvas"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"annotation" : "## A 'drunkard's walk' VIZZIE data generator ##",
-									"bgmode" : 1,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-9",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "vz.wandr.maxpat",
-									"numinlets" : 4,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 419.0, 176.0, 148.0, 112.0 ],
-									"prototypename" : "pixl",
-									"varname" : "wandr",
-									"viewvisibility" : 1
 								}
 
 							}
@@ -12850,6 +12850,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-17", 1 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-19", 0 ],
 									"source" : [ "obj-17", 0 ]
 								}
@@ -12890,13 +12897,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-17", 1 ],
-									"source" : [ "obj-9", 0 ]
-								}
-
-							}
  ]
 					}
 ,
@@ -12926,6 +12926,18 @@
 						"rect" : [ 85.0, 100.0, 1356.0, 848.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 393.0, 482.0, 150.0, 33.0 ],
+									"text" : "Try choromakeyr with a green screen"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"annotation" : "## Combine two videos using lumakeying ##",
 									"bgmode" : 1,
@@ -13003,7 +13015,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 346.0, 471.0, 58.0, 22.0 ],
+									"patching_rect" : [ 934.0, 472.0, 58.0, 22.0 ],
 									"text" : "loadbang"
 								}
 
@@ -13110,7 +13122,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 419.0, 505.0, 32.0, 22.0 ],
+									"patching_rect" : [ 1007.0, 506.0, 32.0, 22.0 ],
 									"text" : "0.01"
 								}
 
@@ -13122,7 +13134,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 373.0, 505.0, 29.5, 22.0 ],
+									"patching_rect" : [ 961.0, 506.0, 29.5, 22.0 ],
 									"text" : "0.6"
 								}
 
@@ -13134,7 +13146,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 346.0, 505.0, 29.5, 22.0 ],
+									"patching_rect" : [ 934.0, 506.0, 29.5, 22.0 ],
 									"text" : "0.1"
 								}
 
@@ -13155,7 +13167,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 350.0, 860.0, 230.0, 208.0 ],
+									"patching_rect" : [ 938.0, 861.0, 230.0, 208.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr[2]",
 									"viewvisibility" : 1
@@ -13179,7 +13191,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 350.0, 536.0, 272.0, 234.0 ],
+									"patching_rect" : [ 938.0, 537.0, 272.0, 234.0 ],
 									"prototypename" : "pixl",
 									"varname" : "vz.patternizr",
 									"viewvisibility" : 1
@@ -13203,7 +13215,7 @@
 									"numoutlets" : 4,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture", "", "", "" ],
-									"patching_rect" : [ 1097.0, 626.0, 127.0, 144.0 ],
+									"patching_rect" : [ 761.0, 607.0, 127.0, 144.0 ],
 									"prototypename" : "pixl",
 									"varname" : "primr",
 									"viewvisibility" : 1
@@ -13216,7 +13228,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1097.0, 787.0, 127.0, 20.0 ],
+									"patching_rect" : [ 782.0, 768.0, 127.0, 20.0 ],
 									"text" : "RGB Keying value"
 								}
 
@@ -13227,7 +13239,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 956.0, 740.0, 45.0, 20.0 ],
+									"patching_rect" : [ 641.0, 721.0, 45.0, 20.0 ],
 									"text" : "Blue"
 								}
 
@@ -13238,7 +13250,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 860.0, 740.0, 45.0, 20.0 ],
+									"patching_rect" : [ 545.0, 721.0, 45.0, 20.0 ],
 									"text" : "Green"
 								}
 
@@ -13249,7 +13261,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 785.0, 740.0, 45.0, 20.0 ],
+									"patching_rect" : [ 470.0, 721.0, 45.0, 20.0 ],
 									"text" : "Red"
 								}
 
@@ -13366,7 +13378,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 945.0, 758.0, 88.0, 108.0 ],
+									"patching_rect" : [ 630.0, 739.0, 88.0, 108.0 ],
 									"varname" : "twistr[2]",
 									"viewvisibility" : 1
 								}
@@ -13389,7 +13401,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 849.0, 758.0, 88.0, 108.0 ],
+									"patching_rect" : [ 534.0, 739.0, 88.0, 108.0 ],
 									"varname" : "twistr[1]",
 									"viewvisibility" : 1
 								}
@@ -13412,7 +13424,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 755.0, 758.0, 88.0, 108.0 ],
+									"patching_rect" : [ 440.0, 739.0, 88.0, 108.0 ],
 									"varname" : "twistr",
 									"viewvisibility" : 1
 								}
@@ -13434,7 +13446,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 625.0, 1057.0, 230.0, 208.0 ],
+									"patching_rect" : [ 335.0, 1040.0, 230.0, 208.0 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr[1]",
 									"viewvisibility" : 1
@@ -13458,7 +13470,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture", "" ],
-									"patching_rect" : [ 708.0, 547.0, 348.0, 158.0 ],
+									"patching_rect" : [ 393.0, 528.0, 348.0, 158.0 ],
 									"prototypename" : "pixl",
 									"varname" : "playr",
 									"viewvisibility" : 1
@@ -13482,7 +13494,7 @@
 									"numoutlets" : 4,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture", "", "", "" ],
-									"patching_rect" : [ 625.0, 875.0, 408.0, 146.0 ],
+									"patching_rect" : [ 310.0, 856.0, 408.0, 146.0 ],
 									"prototypename" : "pixl",
 									"varname" : "chromakeyr",
 									"viewvisibility" : 1
@@ -13506,7 +13518,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-10", 1 ],
+									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -13616,8 +13628,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-10", 1 ],
+									"order" : 0,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -13625,7 +13637,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-35", 0 ]
 								}
 
@@ -14622,7 +14634,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 238.0, 424.0, 75.0, 22.0 ],
-									"text" : "0.451744"
+									"text" : "0.650122"
 								}
 
 							}
@@ -16054,18 +16066,137 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 81.0, 100.0, 947.0, 694.0 ],
+						"rect" : [ 81.0, 100.0, 1343.0, 694.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
+									"annotation" : "## A 'drunkard's walk' VIZZIE data generator ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-9",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.wandr.maxpat",
+									"numinlets" : 4,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 540.0, 590.0, 148.0, 112.0 ],
+									"prototypename" : "pixl",
+									"varname" : "wandr",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 375.0, 566.0, 29.5, 22.0 ],
+									"text" : "0.5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 355.0, 537.0, 29.5, 22.0 ],
+									"text" : "0.3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "## View or monitor video input ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-20",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.viewr.maxpat",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 313.0, 923.0, 230.0, 208.0 ],
+									"prototypename" : "pixl",
+									"varname" : "viewr",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"format" : 6,
-									"id" : "obj-12",
+									"id" : "obj-19",
 									"maxclass" : "flonum",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 182.0, 602.0, 50.0, 22.0 ]
+									"patching_rect" : [ 372.0, 663.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 392.5, 616.0, 29.5, 22.0 ],
+									"text" : "1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 701.0, 655.0, 150.0, 47.0 ],
+									"text" : "values between 0 - 1 control the connected parameters"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"annotation" : "## Pixilate a video ##",
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "vz.pixl8r.maxpat",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "jit_gl_texture" ],
+									"patching_rect" : [ 313.0, 714.0, 128.0, 130.0 ],
+									"prototypename" : "pixl",
+									"varname" : "pixl8r",
+									"viewvisibility" : 1
 								}
 
 							}
@@ -16078,55 +16209,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 490.0, 626.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"annotation" : "## An LFO-based VIZZIE data generator ##",
-									"bgmode" : 1,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-8",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "vz.oscil8r.maxpat",
-									"numinlets" : 4,
-									"numoutlets" : 1,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 490.0, 464.0, 200.0, 146.0 ],
-									"prototypename" : "pixl",
-									"varname" : "oscil8r",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"annotation" : "## The VIZZIE audio/video player/looper ##",
-									"bgmode" : 1,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-7",
-									"lockeddragscroll" : 0,
-									"lockedsize" : 0,
-									"maxclass" : "bpatcher",
-									"name" : "vz.avplayr.maxpat",
-									"numinlets" : 7,
-									"numoutlets" : 4,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "jit_gl_texture", "signal", "signal", "" ],
-									"patching_rect" : [ 127.0, 641.0, 348.0, 170.0 ],
-									"prototypename" : "pixl",
-									"varname" : "avplayr",
-									"viewvisibility" : 1
+									"patching_rect" : [ 540.0, 711.0, 50.0, 22.0 ]
 								}
 
 							}
@@ -16137,7 +16220,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 125.0, 483.0, 298.0, 47.0 ],
+									"patching_rect" : [ 442.0, 498.0, 298.0, 47.0 ],
 									"text" : "Vizzie controls can also be set by sending a number/message into the corresponding input. Hover over inuts to see a tooltip stating what they do."
 								}
 
@@ -16149,7 +16232,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 127.0, 57.0, 243.0, 60.0 ],
+									"patching_rect" : [ 312.0, 194.0, 243.0, 60.0 ],
 									"text" : "Patch Lock/Unlock \n- Cmd/Ctrl+E\n- Cmd/Ctrl + mouse click\n- Lock Icon"
 								}
 
@@ -16161,8 +16244,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 126.0, 372.0, 296.0, 74.0 ],
-									"text" : "<< package manager \n     Search    \"Installed Packages\" > Vizzie\n\n\nOr to to Extras menu and select Vizzie_Launch"
+									"patching_rect" : [ 601.0, 194.0, 296.0, 74.0 ],
+									"text" : "     File > Show package manager \n     Search    \"Installed Packages\" > Vizzie\n\n\nOr to to Extras menu and select Vizzie_Launch"
 								}
 
 							}
@@ -16183,7 +16266,7 @@
 									"numoutlets" : 2,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture", "" ],
-									"patching_rect" : [ 127.0, 201.0, 348.0, 158.0 ],
+									"patching_rect" : [ 312.0, 338.0, 348.0, 158.0 ],
 									"prototypename" : "pixl",
 									"varname" : "playr",
 									"viewvisibility" : 1
@@ -16197,7 +16280,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 127.0, 135.0, 150.0, 60.0 ],
+									"patching_rect" : [ 312.0, 272.0, 150.0, 60.0 ],
 									"text" : "Hover\nRight Click > help\n> Reference\nInspector"
 								}
 
@@ -16205,24 +16288,57 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 1 ],
-									"source" : [ "obj-12", 0 ]
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 2 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 1 ],
+									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
-									"order" : 0,
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-7", 3 ],
-									"order" : 1,
-									"source" : [ "obj-8", 0 ]
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -16255,6 +16371,31 @@
 						"rect" : [ 81.0, 172.0, 1397.0, 703.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-25",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1122.0, 637.0, 50.0, 22.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1079.25, 628.0, 29.5, 22.0 ],
+									"text" : "0.1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-18",
 									"linecount" : 5,
@@ -16653,6 +16794,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-6", 2 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 2 ],
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
@@ -16910,7 +17065,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 206.0, 21.0, 378.0, 44.0 ],
-									"presentation_linecount" : 2,
 									"text" : "The envelopeFollower is pushed up by loud sounds and slowly decays depending on the decay time set"
 								}
 
@@ -19260,6 +19414,14 @@
 			"obj-4::obj-7::obj-39" : [ "pictctrl[408]", "pictctrl[1]", 0 ],
 			"obj-4::obj-7::obj-56::obj-23" : [ "gswitch2[20]", "gswitch2", 0 ],
 			"obj-4::obj-7::obj-68" : [ "Horizontal", "Horizontal", 0 ],
+			"obj-5::obj-1::obj-24" : [ "range[81]", "range", 0 ],
+			"obj-5::obj-1::obj-33" : [ "pictctrl[940]", "pictctrl[1]", 0 ],
+			"obj-5::obj-1::obj-37" : [ "umenu[13]", "Vertical", 0 ],
+			"obj-5::obj-1::obj-39" : [ "pictctrl[939]", "pictctrl[1]", 0 ],
+			"obj-5::obj-1::obj-56::obj-23" : [ "gswitch2[87]", "gswitch2", 0 ],
+			"obj-5::obj-1::obj-68" : [ "Horizontal[5]", "Horizontal", 0 ],
+			"obj-5::obj-20::obj-20" : [ "letterbox_menu[39]", "letterbox_menu", 0 ],
+			"obj-5::obj-20::obj-37" : [ "aspect_menu[39]", "aspect_menu", 0 ],
 			"obj-5::obj-6::obj-10" : [ "pictctrl[331]", "pictctrl[1]", 0 ],
 			"obj-5::obj-6::obj-112::obj-119" : [ "Speed high[3]", "Speed high", 0 ],
 			"obj-5::obj-6::obj-112::obj-120" : [ "Rate range[3]", "Rate range", 0 ],
@@ -19278,34 +19440,15 @@
 			"obj-5::obj-6::obj-81" : [ "pictctrl[325]", "pictctrl[1]", 0 ],
 			"obj-5::obj-6::obj-83" : [ "pictctrl[329]", "pictctrl[1]", 0 ],
 			"obj-5::obj-6::obj-89" : [ "moviename[3]", "moviename", 0 ],
-			"obj-5::obj-7::obj-112::obj-119" : [ "Speed high[22]", "Speed high", 0 ],
-			"obj-5::obj-7::obj-112::obj-120" : [ "Rate range[22]", "Rate range", 0 ],
-			"obj-5::obj-7::obj-112::obj-121" : [ "Speed low[22]", "Speed low", 0 ],
-			"obj-5::obj-7::obj-112::obj-16" : [ "Playback range[22]", "Playback range", 0 ],
-			"obj-5::obj-7::obj-112::obj-40" : [ "Playback controls[22]", "Playback controls", 0 ],
-			"obj-5::obj-7::obj-112::obj-79" : [ "Playback position[22]", "Playback position", 0 ],
-			"obj-5::obj-7::obj-112::obj-89" : [ "Reset range[22]", "Reset range", 0 ],
-			"obj-5::obj-7::obj-112::obj-92" : [ "Reset speed[22]", "Reset speed", 0 ],
-			"obj-5::obj-7::obj-16" : [ "pictctrl[800]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-20" : [ "pictctrl[798]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-28" : [ "pictctrl[799]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-40" : [ "pictctrl[803]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-51" : [ "moviepath[22]", "moviepath", 0 ],
-			"obj-5::obj-7::obj-60" : [ "pictctrl[797]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-64" : [ "pictctrl[802]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-81" : [ "pictctrl[796]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-83" : [ "pictctrl[801]", "pictctrl[1]", 0 ],
-			"obj-5::obj-7::obj-89" : [ "moviename[22]", "moviename", 0 ],
-			"obj-5::obj-8::obj-10" : [ "Frequency[5]", "Frequency", 0 ],
-			"obj-5::obj-8::obj-109" : [ "pictctrl[804]", "pictctrl[3]", 0 ],
-			"obj-5::obj-8::obj-113" : [ "pictctrl[808]", "pictctrl[3]", 0 ],
-			"obj-5::obj-8::obj-12" : [ "Waveform[7]", "Waveform", 0 ],
-			"obj-5::obj-8::obj-13" : [ "phase[16]", "Phase", 0 ],
-			"obj-5::obj-8::obj-265" : [ "pictctrl[807]", "pictctrl[3]", 0 ],
-			"obj-5::obj-8::obj-278" : [ "textbutton[32]", "textbutton[1]", 1 ],
-			"obj-5::obj-8::obj-49" : [ "pictctrl[806]", "pictctrl[1]", 0 ],
-			"obj-5::obj-8::obj-91" : [ "pictctrl[805]", "pictctrl[3]", 0 ],
-			"obj-5::obj-8::obj-96" : [ "Multiply[7]", "Multiply", 0 ],
+			"obj-5::obj-9::obj-12" : [ "pictctrl[947]", "pictctrl[1]", 0 ],
+			"obj-5::obj-9::obj-43" : [ "pictctrl[949]", "pictctrl[1]", 0 ],
+			"obj-5::obj-9::obj-44" : [ "textbutton[32]", "textbutton[1]", 0 ],
+			"obj-5::obj-9::obj-48" : [ "FreqMode[18]", "FreqMode", 0 ],
+			"obj-5::obj-9::obj-49" : [ "pictctrl[946]", "pictctrl[1]", 0 ],
+			"obj-5::obj-9::obj-50" : [ "pictctrl[950]", "pictctrl[1]", 0 ],
+			"obj-5::obj-9::obj-53" : [ "pictctrl[948]", "pictctrl[1]", 0 ],
+			"obj-5::obj-9::obj-64" : [ "Step size[1]", "Step size", 0 ],
+			"obj-5::obj-9::obj-65" : [ "Speed[8]", "Speed", 0 ],
 			"obj-6::obj-13::obj-10" : [ "pictctrl[31]", "pictctrl[1]", 0 ],
 			"obj-6::obj-13::obj-104" : [ "pictctrl[94]", "pictctrl[1]", 0 ],
 			"obj-6::obj-13::obj-107" : [ "Function[1]", "Function", 0 ],
@@ -19961,15 +20104,16 @@
 			"obj-9::obj-17::obj-94" : [ "Interp mode", "Interp mode", 0 ],
 			"obj-9::obj-19::obj-20" : [ "letterbox_menu[10]", "letterbox_menu", 0 ],
 			"obj-9::obj-19::obj-37" : [ "aspect_menu[10]", "aspect_menu", 0 ],
-			"obj-9::obj-9::obj-12" : [ "pictctrl[420]", "pictctrl[1]", 0 ],
-			"obj-9::obj-9::obj-43" : [ "pictctrl[422]", "pictctrl[1]", 0 ],
-			"obj-9::obj-9::obj-44" : [ "textbutton[6]", "textbutton[1]", 0 ],
-			"obj-9::obj-9::obj-48" : [ "FreqMode[12]", "FreqMode", 0 ],
-			"obj-9::obj-9::obj-49" : [ "pictctrl[424]", "pictctrl[1]", 0 ],
-			"obj-9::obj-9::obj-50" : [ "pictctrl[423]", "pictctrl[1]", 0 ],
-			"obj-9::obj-9::obj-53" : [ "pictctrl[421]", "pictctrl[1]", 0 ],
-			"obj-9::obj-9::obj-64" : [ "Step size[1]", "Step size", 0 ],
-			"obj-9::obj-9::obj-65" : [ "Speed[8]", "Speed", 0 ],
+			"obj-9::obj-1::obj-10" : [ "Frequency[4]", "Frequency", 0 ],
+			"obj-9::obj-1::obj-109" : [ "pictctrl[941]", "pictctrl[3]", 0 ],
+			"obj-9::obj-1::obj-113" : [ "pictctrl[945]", "pictctrl[3]", 0 ],
+			"obj-9::obj-1::obj-12" : [ "Waveform[9]", "Waveform", 0 ],
+			"obj-9::obj-1::obj-13" : [ "phase[18]", "Phase", 0 ],
+			"obj-9::obj-1::obj-265" : [ "pictctrl[944]", "pictctrl[3]", 0 ],
+			"obj-9::obj-1::obj-278" : [ "textbutton[39]", "textbutton[1]", 1 ],
+			"obj-9::obj-1::obj-49" : [ "pictctrl[943]", "pictctrl[1]", 0 ],
+			"obj-9::obj-1::obj-91" : [ "pictctrl[942]", "pictctrl[3]", 0 ],
+			"obj-9::obj-1::obj-96" : [ "Multiply[9]", "Multiply", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -23351,6 +23495,30 @@
 					"parameter_longname" : "pictctrl[408]"
 				}
 ,
+				"obj-5::obj-1::obj-33" : 				{
+					"parameter_longname" : "pictctrl[940]"
+				}
+,
+				"obj-5::obj-1::obj-37" : 				{
+					"parameter_longname" : "umenu[13]"
+				}
+,
+				"obj-5::obj-1::obj-39" : 				{
+					"parameter_longname" : "pictctrl[939]"
+				}
+,
+				"obj-5::obj-1::obj-68" : 				{
+					"parameter_longname" : "Horizontal[5]"
+				}
+,
+				"obj-5::obj-20::obj-20" : 				{
+					"parameter_longname" : "letterbox_menu[39]"
+				}
+,
+				"obj-5::obj-20::obj-37" : 				{
+					"parameter_longname" : "aspect_menu[39]"
+				}
+,
 				"obj-5::obj-6::obj-10" : 				{
 					"parameter_longname" : "pictctrl[331]"
 				}
@@ -23399,88 +23567,36 @@
 					"parameter_longname" : "pictctrl[329]"
 				}
 ,
-				"obj-5::obj-7::obj-112::obj-119" : 				{
-					"parameter_longname" : "Speed high[22]"
+				"obj-5::obj-9::obj-12" : 				{
+					"parameter_longname" : "pictctrl[947]"
 				}
 ,
-				"obj-5::obj-7::obj-112::obj-121" : 				{
-					"parameter_longname" : "Speed low[22]"
+				"obj-5::obj-9::obj-43" : 				{
+					"parameter_longname" : "pictctrl[949]"
 				}
 ,
-				"obj-5::obj-7::obj-112::obj-89" : 				{
-					"parameter_longname" : "Reset range[22]"
+				"obj-5::obj-9::obj-48" : 				{
+					"parameter_longname" : "FreqMode[18]"
 				}
 ,
-				"obj-5::obj-7::obj-112::obj-92" : 				{
-					"parameter_longname" : "Reset speed[22]"
+				"obj-5::obj-9::obj-49" : 				{
+					"parameter_longname" : "pictctrl[946]"
 				}
 ,
-				"obj-5::obj-7::obj-16" : 				{
-					"parameter_longname" : "pictctrl[800]"
+				"obj-5::obj-9::obj-50" : 				{
+					"parameter_longname" : "pictctrl[950]"
 				}
 ,
-				"obj-5::obj-7::obj-20" : 				{
-					"parameter_longname" : "pictctrl[798]"
+				"obj-5::obj-9::obj-53" : 				{
+					"parameter_longname" : "pictctrl[948]"
 				}
 ,
-				"obj-5::obj-7::obj-28" : 				{
-					"parameter_longname" : "pictctrl[799]"
+				"obj-5::obj-9::obj-64" : 				{
+					"parameter_longname" : "Step size[1]"
 				}
 ,
-				"obj-5::obj-7::obj-40" : 				{
-					"parameter_longname" : "pictctrl[803]"
-				}
-,
-				"obj-5::obj-7::obj-60" : 				{
-					"parameter_longname" : "pictctrl[797]"
-				}
-,
-				"obj-5::obj-7::obj-64" : 				{
-					"parameter_longname" : "pictctrl[802]"
-				}
-,
-				"obj-5::obj-7::obj-81" : 				{
-					"parameter_longname" : "pictctrl[796]"
-				}
-,
-				"obj-5::obj-7::obj-83" : 				{
-					"parameter_longname" : "pictctrl[801]"
-				}
-,
-				"obj-5::obj-8::obj-10" : 				{
-					"parameter_longname" : "Frequency[5]"
-				}
-,
-				"obj-5::obj-8::obj-109" : 				{
-					"parameter_longname" : "pictctrl[804]"
-				}
-,
-				"obj-5::obj-8::obj-113" : 				{
-					"parameter_longname" : "pictctrl[808]"
-				}
-,
-				"obj-5::obj-8::obj-12" : 				{
-					"parameter_longname" : "Waveform[7]"
-				}
-,
-				"obj-5::obj-8::obj-13" : 				{
-					"parameter_longname" : "phase[16]"
-				}
-,
-				"obj-5::obj-8::obj-265" : 				{
-					"parameter_longname" : "pictctrl[807]"
-				}
-,
-				"obj-5::obj-8::obj-49" : 				{
-					"parameter_longname" : "pictctrl[806]"
-				}
-,
-				"obj-5::obj-8::obj-91" : 				{
-					"parameter_longname" : "pictctrl[805]"
-				}
-,
-				"obj-5::obj-8::obj-96" : 				{
-					"parameter_longname" : "Multiply[7]"
+				"obj-5::obj-9::obj-65" : 				{
+					"parameter_longname" : "Speed[8]"
 				}
 ,
 				"obj-6::obj-13::obj-10" : 				{
@@ -24987,36 +25103,40 @@
 					"parameter_longname" : "aspect_menu[10]"
 				}
 ,
-				"obj-9::obj-9::obj-12" : 				{
-					"parameter_longname" : "pictctrl[420]"
+				"obj-9::obj-1::obj-10" : 				{
+					"parameter_longname" : "Frequency[4]"
 				}
 ,
-				"obj-9::obj-9::obj-43" : 				{
-					"parameter_longname" : "pictctrl[422]"
+				"obj-9::obj-1::obj-109" : 				{
+					"parameter_longname" : "pictctrl[941]"
 				}
 ,
-				"obj-9::obj-9::obj-48" : 				{
-					"parameter_longname" : "FreqMode[12]"
+				"obj-9::obj-1::obj-113" : 				{
+					"parameter_longname" : "pictctrl[945]"
 				}
 ,
-				"obj-9::obj-9::obj-49" : 				{
-					"parameter_longname" : "pictctrl[424]"
+				"obj-9::obj-1::obj-12" : 				{
+					"parameter_longname" : "Waveform[9]"
 				}
 ,
-				"obj-9::obj-9::obj-50" : 				{
-					"parameter_longname" : "pictctrl[423]"
+				"obj-9::obj-1::obj-13" : 				{
+					"parameter_longname" : "phase[18]"
 				}
 ,
-				"obj-9::obj-9::obj-53" : 				{
-					"parameter_longname" : "pictctrl[421]"
+				"obj-9::obj-1::obj-265" : 				{
+					"parameter_longname" : "pictctrl[944]"
 				}
 ,
-				"obj-9::obj-9::obj-64" : 				{
-					"parameter_longname" : "Step size[1]"
+				"obj-9::obj-1::obj-49" : 				{
+					"parameter_longname" : "pictctrl[943]"
 				}
 ,
-				"obj-9::obj-9::obj-65" : 				{
-					"parameter_longname" : "Speed[8]"
+				"obj-9::obj-1::obj-91" : 				{
+					"parameter_longname" : "pictctrl[942]"
+				}
+,
+				"obj-9::obj-1::obj-96" : 				{
+					"parameter_longname" : "Multiply[9]"
 				}
 
 			}
